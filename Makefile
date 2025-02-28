@@ -52,8 +52,12 @@ step2:
 
 
 step3:
+	$(MAKE) clean $(FREQS); head $(FREQS)
+
+
+step4: 
 	$(MAKE) clean $(TOP_WORDS); head $(TOP_WORDS)
 
 
-step4:
+step5:
 	$(MAKE) clean $(TABLE); head $(TABLE) # | column -s, -t
