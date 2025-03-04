@@ -1,2 +1,2 @@
 #!/bin/sh
-sed 's/ /\n/g' | sort | uniq -c 
+tr -d '^\n' | sed 's/ /\n/g' | sort | uniq -c 

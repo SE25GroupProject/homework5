@@ -27,7 +27,9 @@ BEGIN {
 {
     for (i = 1; i <= NF; i++) {
         if (!($i in stop)) {
-            printf "%s%s", $i, (i < NF ? " " : "\n")
+            printf "%s%s", $i, " "
         }
     }
+    
+    print ""
 }
